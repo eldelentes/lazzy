@@ -1,0 +1,22 @@
+{
+  "name": "lazzy.js",
+  "version": "1.0.0",
+  "description": "Lightweight jquery plugin for show elements with your own animations progressively while you scroll a page ",
+  "main": "dist/lazzy.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eldelentes/lazzy.git"
+  },
+  "author": "Eduardo Higareda",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eldelentes/lazzy/issues"
+  },
+  "homepage": "https://github.com/eldelentes/lazzy#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
