@@ -2,6 +2,9 @@ var gulp = require('gulp');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
 var pump = require('pump');
+var watch = require('gulp-watch');
+
+gulp.task('default', ['watch']);
 
 gulp.task('dist', function (cb) {
 	pump([
@@ -16,5 +19,6 @@ gulp.task('dist', function (cb) {
 
 gulp.task('build', ['dist']);
 
-gulp.task('default', function (done) {
+gulp.task('watch', function () {
+    gulp.watch('src/lazzy.js', ['dist']);
 });
