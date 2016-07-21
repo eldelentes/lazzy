@@ -17,6 +17,9 @@
   },
   "homepage": "https://github.com/eldelentes/lazzy#readme",
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.5.4",
+    "pump": "^1.0.1"
   }
 }
