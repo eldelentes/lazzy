@@ -29,17 +29,16 @@
 </body>
 <script type="text/javascript" src="src/lazzy.js"></script>
 <script type="text/javascript">
-	function showMenu(){
-		alert("jeje");
-	}
-
 	$('.square').lazzy({
-		delay: 800,
-		afterFinish: showMenu
+		delay: 800
 	});
 
 	$('.circle').lazzy({
-		delay: 200
+		onScroll: true,
+		triggerOffset: 300,
+		afterFinish: function() {
+			console.log("hello");
+		}
 	});
 </script>
 </html>

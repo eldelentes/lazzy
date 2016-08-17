@@ -12,7 +12,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	height: 2000px;
 }
 
 .square {
@@ -20,6 +20,11 @@ body {
 	height: 100px;
 	background: red;
 	display: inline-block;
+}
+
+.squares {
+	position: absolute;
+	bottom: 0;
 }
 
 .circle {
