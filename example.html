@@ -4,7 +4,42 @@
 	<title>Lazzy.js example</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 <body>
+	<div class="content">
+		<div class="squares">
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+			<div class="square"></div>
+		</div>
+		<div class="circles">
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+			<div class="circle"></div>
+		</div>
+
+	</div>
 </body>
+<script type="text/javascript" src="src/lazzy.js"></script>
+<script type="text/javascript">
+	function showMenu(){
+		alert("jeje");
+	}
+
+	$('.square').lazzy({
+		delay: 800,
+		afterFinish: showMenu
+	});
+
+	$('.circle').lazzy({
+		delay: 200
+	});
+</script>
 </html>
